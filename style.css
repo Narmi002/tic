@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+
+body {
+    /* background-color:rgb(217, 212, 205);  */
+    padding: 0px;
+    margin: 0px;
+}
+nav {
+  background-color:lavender;
+  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+ 
+
+}
+
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    text-decoration: none;
+    font-family: 'Secular One', sans-serif;
+    font-size: 2rem;
+}
+.quote{
+    font-family: cursive;
+    padding: 0px 5px;
+    margin-bottom:-34px;
+    color: maroon;
+}
+
+.gamecontainer {
+    display: flex;
+
+    text-align: center;
+    justify-content: center;
+
+    margin-top: 60px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+
+}
+.gameinfo {
+    padding: 105px 34px;
+    margin: 0px 50px;
+
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    font-family: 'Secular One', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+h1 {
+    font-family: serif;
+    font-weight: bold;
+    
+}
+.info {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    
+    font-size: 1.3rem;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.boxtex{
+    font-size:5rem;
+}
+img {
+    height: 200px;
+    padding: 23px;
+
+}
+
+#reset {
+    background-color:cadetblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:4px 8px;
+    margin:0px 23px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    color: black;
+    cursor: pointer;
+    width: 102px;
+   
+}
+
+#reset:hover{
+
+    text-decoration: underline;
+    color: indigo;
+}
+
+@media screen and (max-width:593px){
+
+
+
+
+    nav ul li {
+        font-size: 1.7rem;
+    }
+  .gamecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:50px;
+    height: 200px;
+
+
+  }
+
+
+
+  .gameinfo{
+    margin-bottom: -200px;
+    padding-bottom: 34px;
+  }
+  
+
+  .container{
+    grid-template-columns: repeat(3,20vw);
+    grid-template-rows: repeat(3,20vw);
+  }
+  
+  .quote {
+    font-size: 0.7rem;
+    margin-left: -80px;
+    margin-top: 34px;
+  }
+
+}
